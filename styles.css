@@ -1,0 +1,191 @@
+.btn{
+  background-color: rgb(37, 21, 141);
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+  margin-right: 1px;
+  font-size: 15px;
+  padding: 10px 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: 0.5s;
+  position: relative;
+  left: 650px;
+}
+
+/* hover effect */
+.btn:hover{
+  background-color: rgb(226, 40, 40);
+  color: rgb(255, 255, 255);
+}
+
+.fa{
+  padding: 5px;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.fa:hover{
+  opacity: 1;
+  color: aqua;
+  background-color: black;
+}
+
+.fa-facebook{
+  background: rgb(197, 208, 208);
+  color: black;
+}
+.fa-twitter{
+  background: rgb(197, 208, 208);
+  color: black;
+}
+.fa-github{
+  background: rgb(197, 208, 208);
+  color: black;
+}
+.fa-youtube{
+  background: rgb(197, 208, 208);
+  color: black; 
+}
+
+.in-out-effect {
+  border-radius: 2px;
+  transition: all 1s ease;
+  transform: scale(1);
+}
+  
+.in-out-effect:hover {
+  /*  Making button bigger on hover  */
+  transform: scale(1.1) perspective(2px)
+  }
+
+/* #sm-buttons{
+  position: relative ;
+  bottom: 100%;
+  margin-top: 10px;
+} */
+
+
+.circular-img{
+  border-radius: 100%;
+  width: 65px;
+  height: 65px;
+  border-width: 5px;
+  transition: 0.5s;
+}
+
+.circular-img:hover{
+  border-radius: 10%;
+  border-color: aqua;
+}
+
+/* .circular-img:active{
+  transform: translate(0px 5px);
+  -webkit-transform: translate(0px 5px);
+  box-shadow: 2px 2px 2px 2px;
+} */
+
+.circular-img2{
+  border-radius: 50%;
+  width:200px;
+  height: 200px;
+}
+
+/* #circular-outer-ul{
+  position: relative;
+  right: 10px; 
+  list-style-type: none;
+} */
+
+/*Transition between webpages*/
+.container{
+  animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn {
+  from{
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to{
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+.biography-div{
+  border-radius: 2%;
+  background-color: rgb(228, 217, 217);
+  width: 800px; 
+  height: 400px;
+  color: rgb(0, 0, 0);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+  
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+  
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+
+.area {
+  padding: 1rem;
+  background: white;
+  height: 250px;
+  overflow: auto;
+}
+
+/*bio-photos*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+  
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+  
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+  
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+  
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
